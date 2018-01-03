@@ -1,0 +1,8 @@
+<ul>
+<% @users.each do |user| %>
+	<% UserDecorator.new(user) do |u| %>
+	  <li><%= u.full_name %></li>
+	<% end %>
+<% end %>
+</ul>
+
