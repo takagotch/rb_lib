@@ -1,0 +1,10 @@
+<% UserPresenter.new(@user, self) do |u| %>
+<div><%= u.full_name_with_hyper_link %></div>
+<% end %>
+
+<ul>
+<% UserPresenter.build(@users, self) do |u| %>
+<li><%= u.full_name_with_hyper_link %></li>
+<% end %>
+</ul>
+
